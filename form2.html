@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form2</title>
+</head>
+<body>
+    <form>
+        <div class="form-container">
+        <div class="form-elements">
+            <input type="text" name="name" id="fname" placeholder="First name">
+        </div>
+        <div class="form-elements">
+            <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+        </div>
+        <div class="form-elements">
+                        <input type="text" name="address" id="address" placeholder="address">
+        </div>
+    </div>
+    <div class="btn-container">
+        <button onclick="displayValue()">Save</button>
+    </div>
+    </form>
+
+    <script>
+        function displayValue()
+        {
+            var fname=document.getElementById("fname").value;
+            var tel=document.getElementById("tel").value;
+            var address=document.getElementById("address").value;
+
+            document.writeln(fname);
+            document.writeln(tel);
+            document.writeln(address);
+        }
+    </script>
+</body>
+</html>
